@@ -13,6 +13,9 @@
 NA 
 
 ### Current Items
+Make the messenger group chat for communication. 
+
+### New Items
 Exercise 1: 
 - Nadeesha
 
@@ -22,13 +25,11 @@ Exercise 2:
 Exercise 3: 
 - Ben 
 
+Aim to complete these exercises by the next lab (10/4/24). 
+
 Exercise 4: 
 - together/after everything else is done. 
 
-Made the messenger group chat for communication. 
-
-### New Items
-NA 
 
 ### Next Meeting Date 
 Next Wednesday, 2pm. 
