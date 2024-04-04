@@ -1,0 +1,20 @@
+11:54:06 **** Incremental Build of configuration Debug for project task_3_1 ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:68:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   68 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "task_3_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\task_3_1\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="task_3_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: task_3_1.elf
+ 
+arm-none-eabi-size  task_3_1.elf 
+arm-none-eabi-objdump -h -S task_3_1.elf  > "task_3_1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1132	      8	   1568	   2708	    a94	task_3_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: task_3_1.list
+ 
+
+11:54:07 Build Finished. 0 errors, 1 warnings. (took 623ms)
+
