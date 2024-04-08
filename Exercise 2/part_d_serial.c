@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-#include "first_serial.h"
+#include "serial.h"
 #include "stm32f303xc.h"
 
 #define BUFFER_SIZE 64
