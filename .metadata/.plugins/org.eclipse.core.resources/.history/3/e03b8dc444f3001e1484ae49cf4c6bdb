@@ -1,0 +1,29 @@
+
+#ifndef TIMER_HEADER
+#define TIMER_HEADER
+
+#include <stdint.h>
+#include "stm32f303xc.h"
+
+// Defining the serial port struct, the definition is hidden in the
+// c file as no one really needs to know this.
+struct _HardwareTimer;
+typedef struct _HardwareTimer HardwareTimer;
+
+// make instance for TIM2
+extern HardwareTimer TIM2_init;
+
+// initialise timer
+void TimerInitialise(HardwareTimer *hardware_timer);
+
+// enable the timer interrupts
+void enable_timer_interrupt();
+
+// get and set functions for timer
+uint16_t getPrescaleValue();
+void setPrescaleValue(uint16_t value);
+uint32_t getARRValue();
+void setARRValue(uint32_t value);
+void setPeriod(uint32_t period);
+
+#endif
