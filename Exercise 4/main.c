@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "first_serial.h"
+#include "serial.h"
 #include "stm32f303xc.h"
 
 #if !defined(__SOFT_FP__) && defined(__ARM_FP)
