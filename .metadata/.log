@@ -1525,3 +1525,21 @@ java.io.IOException: Cannot run program "g++": Launching failed
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-04-08 22:36:13.894
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-08 22:45:36.768
+!MESSAGE Indexed 'task_3_3' (3 sources, 53 headers) in 0.613 sec: 1,950 declarations; 2,832 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-08 22:47:12.421
+!MESSAGE Indexed 'task_3_3' (3 sources, 53 headers) in 0.164 sec: 1,950 declarations; 2,832 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2024-04-09 11:23:42.074
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-09 11:24:25.794
+!MESSAGE Indexed 'task_3_3' (5 sources, 63 headers) in 0.359 sec: 3,149 declarations; 5,299 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.024%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2024-04-09 11:24:30.595
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2024-04-09 11:25:24.491
+!MESSAGE Won't launch debug session since we failed to locate the binary.

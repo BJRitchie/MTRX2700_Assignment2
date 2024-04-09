@@ -98,6 +98,7 @@ uint16_t getPrescaleValue(struct _HardwareTimer *hardware_timer){
 void setPrescaleValue(struct _HardwareTimer *hardware_timer, uint16_t value) {
 	// set value
 	hardware_timer->PrescaleValue = value;
+    hardware_timer->TIMx->PSC = value;
 
 	// reset timer to engage clock
 	hardware_timer->TIMx->EGR |= 0x01;
@@ -119,7 +120,9 @@ uint32_t getARRValue(struct _HardwareTimer *hardware_timer){
 void setARRValue(struct _HardwareTimer *hardware_timer, uint32_t value) {
 	// set value
 	hardware_timer->ARRValue = value;
+    hardware_timer->TIMx->ARR = value;
 }
+
 
 // Set a period between clock overflows and therefore interrupts .
 // Will also reset clock.
@@ -131,20 +134,6 @@ void setPeriod(struct _HardwareTimer *hardware_timer, uint32_t period) {
 	setARRValue(hardware_timer, period);  	// set overflow to period value
 }
 
-
-//void timer_completion_func(struct _HardwareTimer *hardware_timer, void (*on_timer_overflow)(void)) {
-//	// Check if the interrupt is due to an overflow
-//	if (hardware_timer->TIMx->SR & TIM_SR_UIF) {
-//		// Clear the update interrupt flag
-//		hardware_timer->TIMx->SR &= ~TIM_SR_UIF;
-//
-//		// Run the overflow handler
-//		if (on_timer_overflow != 0x00) { // make sure the handler is not null
-//			on_timer_overflow();
-//		}
-//	}
-//}
-//
 
 
 

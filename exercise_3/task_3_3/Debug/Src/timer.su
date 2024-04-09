@@ -1,0 +1,12 @@
+C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc/core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
+C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc/core_cm4.h:1816:22:__NVIC_SetPriority	16	static
+../Src/timer.c:36:6:TimerInitialise	16	static
+../Src/timer.c:61:6:TIM2_IRQHandler	8	static
+../Src/timer.c:80:6:enable_timer_interrupt	8	static,ignoring_inline_asm
+../Src/timer.c:99:10:getPrescaleValue	16	static
+../Src/timer.c:107:6:setPrescaleValue	16	static
+../Src/timer.c:121:10:getARRValue	16	static
+../Src/timer.c:129:6:setARRValue	16	static
+../Src/timer.c:140:6:setPeriod	16	static
+../Src/timer.c:145:6:setCompletionFunc	16	static
+../Src/timer.c:150:6:set_one_shot_mode	24	static
