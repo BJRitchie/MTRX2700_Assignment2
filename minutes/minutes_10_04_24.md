@@ -12,7 +12,7 @@
 - Completing exercises 1-3 
 
 ### Current Items
-- Work on exercise 4 altogether 
+Work on exercise 4 altogether 
 
 ### New Items
 Exercise 4: 
