@@ -1,31 +1,39 @@
-Present:
-Ben
-Sebastian
-Nadeesha
-Meeting Purpose
-Organise tasks
-Ideation of different sections/tasks
-Previous Actions
-NA
+## Date - 3/04/2024
 
-Current Items
-Make the messenger group chat for communication.
+### Present: 
+- Ben
+- Sebastian
+- Nadeesha 
 
-New Items
-Exercise 1:
+### Meeting Purpose
+- Establish progress made
+- Assist eachother in our exercises
+- Start working toward exercise 4 modularisation 
 
-Nadeesha
-Exercise 2:
+### Previous Actions 
+- Organise tasks
+- Ideation of different sections/tasks
+- Created messenger group chat
 
-Sebastian
-Exercise 3:
+### Current Items
+Finish exercises 1-3 and move on to exercise 4 together
 
-Ben
-Aim to complete these exercises by the next lab (10/4/24).
+### New Items
+Exercise 1: 
+- Nadeesha (in-progress)
 
-Exercise 4:
+Exercise 2: 
+- Sebastian (in-progress)
 
-together/after everything else is done.
-Next Meeting Date
-Next Wednesday, 2pm.
+Exercise 3: 
+- Ben (in-progress)
+
+Aim to complete these exercises by the next lab (10/04/24). 
+
+Exercise 4: 
+- Once each previous exercise is complete, look at integration for exercise 4
+
+
+### Next Meeting Date 
+Next Wednesday, 2pm. 
 
