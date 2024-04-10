@@ -15,15 +15,6 @@
 - Work on exercise 4 altogether 
 
 ### New Items
-Exercise 1: 
-- Nadeesha (completed)
-
-Exercise 2: 
-- Sebastian (completed)
-
-Exercise 3: 
-- Ben (completed)
-
 Exercise 4: 
 - All members (in progress)
 
