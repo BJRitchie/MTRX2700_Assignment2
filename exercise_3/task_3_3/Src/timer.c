@@ -21,7 +21,6 @@ struct _HardwareTimer {
 HardwareTimer TIM2_init = {
 		TIM2,
 		1, 					// default prescaler value
-//		4294967296-1, 		// default overflow value
 		FALSE, 				// not in one-shot mode
 		100,
 		0x00, 				// bit to enable APB2 bus

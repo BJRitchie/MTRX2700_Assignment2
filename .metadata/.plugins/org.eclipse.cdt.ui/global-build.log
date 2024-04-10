@@ -3177,3 +3177,857 @@ Finished building: default.size.stdout
  
 Finished building: task_3_3.list
  
+14:21:14 **** Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.o"
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c:36:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:29:10: fatal error: stm32f3xx_hal_conf.h: No such file or directory
+   29 | #include "stm32f3xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32F3xx_HAL_Driver/Src/subdir.mk:79: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c:108:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:29:10: fatal error: stm32f3xx_hal_conf.h: No such file or directory
+   29 | #include "stm32f3xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32F3xx_HAL_Driver/Src/subdir.mk:79: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o] Error 1
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c:77:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:29:10: fatal error: stm32f3xx_hal_conf.h: No such file or directory
+   29 | #include "stm32f3xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32F3xx_HAL_Driver/Src/subdir.mk:79: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.o] Error 1
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.c:86:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:29:10: fatal error: stm32f3xx_hal_conf.h: No such file or directory
+   29 | #include "stm32f3xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32F3xx_HAL_Driver/Src/subdir.mk:79: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.o] Error 1
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c:83:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:29:10: fatal error: stm32f3xx_hal_conf.h: No such file or directory
+   29 | #include "stm32f3xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32F3xx_HAL_Driver/Src/subdir.mk:79: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.o] Error 1
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c:41:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:29:10: fatal error: stm32f3xx_hal_conf.h: No such file or directory
+   29 | #include "stm32f3xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32F3xx_HAL_Driver/Src/subdir.mk:79: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+14:22:20 **** Incremental Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.o"
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c:36:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:877:1: error: unknown type name 'HAL_StatusTypeDef'
+  877 | HAL_StatusTypeDef HAL_Init(void);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:878:1: error: unknown type name 'HAL_StatusTypeDef'
+  878 | HAL_StatusTypeDef HAL_DeInit(void);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:881:1: error: unknown type name 'HAL_StatusTypeDef'
+  881 | HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:881:33: error: unknown type name 'uint32_t'
+  881 | HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+      |                                 ^~~~~~~~
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c:36:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:1:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /**
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c:36:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:890:8: error: unknown type name '__IO'
+  890 | extern __IO uint32_t uwTick;
+      |        ^~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:890:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'uwTick'
+  890 | extern __IO uint32_t uwTick;
+      |                      ^~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:891:8: error: unknown type name 'uint32_t'
+  891 | extern uint32_t uwTickPrio;
+      |        ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:903:20: error: unknown type name 'uint32_t'
+  903 | void     HAL_Delay(uint32_t Delay);
+      |                    ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:903:20: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:906:1: error: unknown type name 'uint32_t'
+  906 | uint32_t HAL_GetTick(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:906:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:907:1: error: unknown type name 'uint32_t'
+  907 | uint32_t HAL_GetTickPrio(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:907:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:908:1: error: unknown type name 'HAL_StatusTypeDef'
+  908 | HAL_StatusTypeDef HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:910:1: error: unknown type name 'uint32_t'
+  910 | uint32_t HAL_GetHalVersion(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:910:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:911:1: error: unknown type name 'uint32_t'
+  911 | uint32_t HAL_GetREVID(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:911:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:912:1: error: unknown type name 'uint32_t'
+  912 | uint32_t HAL_GetDEVID(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:912:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:913:1: error: unknown type name 'uint32_t'
+  913 | uint32_t HAL_GetUIDw0(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:913:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:914:1: error: unknown type name 'uint32_t'
+  914 | uint32_t HAL_GetUIDw1(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:914:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:915:1: error: unknown type name 'uint32_t'
+  915 | uint32_t HAL_GetUIDw2(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:915:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.o"
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c:108:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:877:1: error: unknown type name 'HAL_StatusTypeDef'
+  877 | HAL_StatusTypeDef HAL_Init(void);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:878:1: error: unknown type name 'HAL_StatusTypeDef'
+  878 | HAL_StatusTypeDef HAL_DeInit(void);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:881:1: error: unknown type name 'HAL_StatusTypeDef'
+  881 | HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:881:33: error: unknown type name 'uint32_t'
+  881 | HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+      |                                 ^~~~~~~~
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c:108:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:1:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /**
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c:108:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:890:8: error: unknown type name '__IO'
+  890 | extern __IO uint32_t uwTick;
+      |        ^~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:890:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'uwTick'
+  890 | extern __IO uint32_t uwTick;
+      |                      ^~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:891:8: error: unknown type name 'uint32_t'
+  891 | extern uint32_t uwTickPrio;
+      |        ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:903:20: error: unknown type name 'uint32_t'
+  903 | void     HAL_Delay(uint32_t Delay);
+      |                    ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:903:20: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:906:1: error: unknown type name 'uint32_t'
+  906 | uint32_t HAL_GetTick(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:906:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:907:1: error: unknown type name 'uint32_t'
+  907 | uint32_t HAL_GetTickPrio(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:907:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:908:1: error: unknown type name 'HAL_StatusTypeDef'
+  908 | HAL_StatusTypeDef HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:910:1: error: unknown type name 'uint32_t'
+  910 | uint32_t HAL_GetHalVersion(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:910:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:911:1: error: unknown type name 'uint32_t'
+  911 | uint32_t HAL_GetREVID(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:911:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:912:1: error: unknown type name 'uint32_t'
+  912 | uint32_t HAL_GetDEVID(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:912:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:913:1: error: unknown type name 'uint32_t'
+  913 | uint32_t HAL_GetUIDw0(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:913:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:914:1: error: unknown type name 'uint32_t'
+  914 | uint32_t HAL_GetUIDw1(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:914:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:915:1: error: unknown type name 'uint32_t'
+  915 | uint32_t HAL_GetUIDw2(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:915:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+make: *** [Drivers/STM32F3xx_HAL_Driver/Src/subdir.mk:79: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c:77:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:877:1: error: unknown type name 'HAL_StatusTypeDef'
+  877 | HAL_StatusTypeDef HAL_Init(void);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:878:1: error: unknown type name 'HAL_StatusTypeDef'
+  878 | HAL_StatusTypeDef HAL_DeInit(void);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:881:1: error: unknown type name 'HAL_StatusTypeDef'
+  881 | HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:881:33: error: unknown type name 'uint32_t'
+  881 | HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+      |                                 ^~~~~~~~
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c:77:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:1:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /**
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c:77:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:890:8: error: unknown type name '__IO'
+  890 | extern __IO uint32_t uwTick;
+      |        ^~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:890:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'uwTick'
+  890 | extern __IO uint32_t uwTick;
+      |                      ^~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:891:8: error: unknown type name 'uint32_t'
+  891 | extern uint32_t uwTickPrio;
+      |        ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:903:20: error: unknown type name 'uint32_t'
+  903 | void     HAL_Delay(uint32_t Delay);
+      |                    ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:903:20: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:906:1: error: unknown type name 'uint32_t'
+  906 | uint32_t HAL_GetTick(void);
+      | ^~~~~~~~
+make: *** [Drivers/STM32F3xx_HAL_Driver/Src/subdir.mk:79: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o] Error 1
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:906:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:907:1: error: unknown type name 'uint32_t'
+  907 | uint32_t HAL_GetTickPrio(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:907:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:908:1: error: unknown type name 'HAL_StatusTypeDef'
+  908 | HAL_StatusTypeDef HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:910:1: error: unknown type name 'uint32_t'
+  910 | uint32_t HAL_GetHalVersion(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:910:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:911:1: error: unknown type name 'uint32_t'
+  911 | uint32_t HAL_GetREVID(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:911:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:912:1: error: unknown type name 'uint32_t'
+  912 | uint32_t HAL_GetDEVID(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:912:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:913:1: error: unknown type name 'uint32_t'
+  913 | uint32_t HAL_GetUIDw0(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:913:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:914:1: error: unknown type name 'uint32_t'
+  914 | uint32_t HAL_GetUIDw1(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:914:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:915:1: error: unknown type name 'uint32_t'
+  915 | uint32_t HAL_GetUIDw2(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:915:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.c:86:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:877:1: error: unknown type name 'HAL_StatusTypeDef'
+  877 | HAL_StatusTypeDef HAL_Init(void);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:878:1: error: unknown type name 'HAL_StatusTypeDef'
+  878 | HAL_StatusTypeDef HAL_DeInit(void);
+      | ^~~~~~~~~~~~~~~~~
+make: *** [Drivers/STM32F3xx_HAL_Driver/Src/subdir.mk:79: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.o] Error 1
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:881:1: error: unknown type name 'HAL_StatusTypeDef'
+  881 | HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:881:33: error: unknown type name 'uint32_t'
+  881 | HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+      |                                 ^~~~~~~~
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.c:86:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:1:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /**
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.c:86:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:890:8: error: unknown type name '__IO'
+  890 | extern __IO uint32_t uwTick;
+      |        ^~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:890:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'uwTick'
+  890 | extern __IO uint32_t uwTick;
+      |                      ^~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:891:8: error: unknown type name 'uint32_t'
+  891 | extern uint32_t uwTickPrio;
+      |        ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:903:20: error: unknown type name 'uint32_t'
+  903 | void     HAL_Delay(uint32_t Delay);
+      |                    ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:903:20: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:906:1: error: unknown type name 'uint32_t'
+  906 | uint32_t HAL_GetTick(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:906:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:907:1: error: unknown type name 'uint32_t'
+  907 | uint32_t HAL_GetTickPrio(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:907:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:908:1: error: unknown type name 'HAL_StatusTypeDef'
+  908 | HAL_StatusTypeDef HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:910:1: error: unknown type name 'uint32_t'
+  910 | uint32_t HAL_GetHalVersion(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:910:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:911:1: error: unknown type name 'uint32_t'
+  911 | uint32_t HAL_GetREVID(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:911:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:912:1: error: unknown type name 'uint32_t'
+  912 | uint32_t HAL_GetDEVID(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:912:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:913:1: error: unknown type name 'uint32_t'
+  913 | uint32_t HAL_GetUIDw0(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:913:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:914:1: error: unknown type name 'uint32_t'
+  914 | uint32_t HAL_GetUIDw1(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:914:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:915:1: error: unknown type name 'uint32_t'
+  915 | uint32_t HAL_GetUIDw2(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:915:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+make: *** [Drivers/STM32F3xx_HAL_Driver/Src/subdir.mk:79: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.o] Error 1
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c:83:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:877:1: error: unknown type name 'HAL_StatusTypeDef'
+  877 | HAL_StatusTypeDef HAL_Init(void);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:878:1: error: unknown type name 'HAL_StatusTypeDef'
+  878 | HAL_StatusTypeDef HAL_DeInit(void);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:881:1: error: unknown type name 'HAL_StatusTypeDef'
+  881 | HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:881:33: error: unknown type name 'uint32_t'
+  881 | HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+      |                                 ^~~~~~~~
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c:83:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:1:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /**
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c:83:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:890:8: error: unknown type name '__IO'
+  890 | extern __IO uint32_t uwTick;
+      |        ^~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:890:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'uwTick'
+  890 | extern __IO uint32_t uwTick;
+      |                      ^~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:891:8: error: unknown type name 'uint32_t'
+  891 | extern uint32_t uwTickPrio;
+      |        ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:903:20: error: unknown type name 'uint32_t'
+  903 | void     HAL_Delay(uint32_t Delay);
+      |                    ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:903:20: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:906:1: error: unknown type name 'uint32_t'
+  906 | uint32_t HAL_GetTick(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:906:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:907:1: error: unknown type name 'uint32_t'
+  907 | uint32_t HAL_GetTickPrio(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:907:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:908:1: error: unknown type name 'HAL_StatusTypeDef'
+  908 | HAL_StatusTypeDef HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:910:1: error: unknown type name 'uint32_t'
+  910 | uint32_t HAL_GetHalVersion(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:910:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:911:1: error: unknown type name 'uint32_t'
+  911 | uint32_t HAL_GetREVID(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:911:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:912:1: error: unknown type name 'uint32_t'
+  912 | uint32_t HAL_GetDEVID(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:912:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:913:1: error: unknown type name 'uint32_t'
+  913 | uint32_t HAL_GetUIDw0(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:913:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:914:1: error: unknown type name 'uint32_t'
+  914 | uint32_t HAL_GetUIDw1(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:914:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:915:1: error: unknown type name 'uint32_t'
+  915 | uint32_t HAL_GetUIDw2(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:915:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+make: *** [Drivers/STM32F3xx_HAL_Driver/Src/subdir.mk:79: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.o] Error 1
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c:41:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:877:1: error: unknown type name 'HAL_StatusTypeDef'
+  877 | HAL_StatusTypeDef HAL_Init(void);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:878:1: error: unknown type name 'HAL_StatusTypeDef'
+  878 | HAL_StatusTypeDef HAL_DeInit(void);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:881:1: error: unknown type name 'HAL_StatusTypeDef'
+  881 | HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:881:33: error: unknown type name 'uint32_t'
+  881 | HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+      |                                 ^~~~~~~~
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c:41:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:1:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /**
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c:41:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:890:8: error: unknown type name '__IO'
+  890 | extern __IO uint32_t uwTick;
+      |        ^~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:890:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'uwTick'
+  890 | extern __IO uint32_t uwTick;
+      |                      ^~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:891:8: error: unknown type name 'uint32_t'
+  891 | extern uint32_t uwTickPrio;
+      |        ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:903:20: error: unknown type name 'uint32_t'
+  903 | void     HAL_Delay(uint32_t Delay);
+      |                    ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:903:20: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:906:1: error: unknown type name 'uint32_t'
+  906 | uint32_t HAL_GetTick(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:906:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:907:1: error: unknown type name 'uint32_t'
+  907 | uint32_t HAL_GetTickPrio(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:907:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:908:1: error: unknown type name 'HAL_StatusTypeDef'
+  908 | HAL_StatusTypeDef HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:910:1: error: unknown type name 'uint32_t'
+  910 | uint32_t HAL_GetHalVersion(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:910:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:911:1: error: unknown type name 'uint32_t'
+  911 | uint32_t HAL_GetREVID(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:911:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:912:1: error: unknown type name 'uint32_t'
+  912 | uint32_t HAL_GetDEVID(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:912:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:913:1: error: unknown type name 'uint32_t'
+  913 | uint32_t HAL_GetUIDw0(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:913:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:914:1: error: unknown type name 'uint32_t'
+  914 | uint32_t HAL_GetUIDw1(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:914:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:915:1: error: unknown type name 'uint32_t'
+  915 | uint32_t HAL_GetUIDw2(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:915:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+make: *** [Drivers/STM32F3xx_HAL_Driver/Src/subdir.mk:79: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.o] Error 1
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c:106:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:877:1: error: unknown type name 'HAL_StatusTypeDef'
+  877 | HAL_StatusTypeDef HAL_Init(void);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:878:1: error: unknown type name 'HAL_StatusTypeDef'
+  878 | HAL_StatusTypeDef HAL_DeInit(void);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:881:1: error: unknown type name 'HAL_StatusTypeDef'
+  881 | HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:881:33: error: unknown type name 'uint32_t'
+  881 | HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+      |                                 ^~~~~~~~
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c:106:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:1:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /**
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c:106:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:890:8: error: unknown type name '__IO'
+  890 | extern __IO uint32_t uwTick;
+      |        ^~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:890:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'uwTick'
+  890 | extern __IO uint32_t uwTick;
+      |                      ^~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:891:8: error: unknown type name 'uint32_t'
+  891 | extern uint32_t uwTickPrio;
+      |        ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:903:20: error: unknown type name 'uint32_t'
+  903 | void     HAL_Delay(uint32_t Delay);
+      |                    ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:903:20: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:906:1: error: unknown type name 'uint32_t'
+  906 | uint32_t HAL_GetTick(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:906:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:907:1: error: unknown type name 'uint32_t'
+  907 | uint32_t HAL_GetTickPrio(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:907:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:908:1: error: unknown type name 'HAL_StatusTypeDef'
+  908 | HAL_StatusTypeDef HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:910:1: error: unknown type name 'uint32_t'
+  910 | uint32_t HAL_GetHalVersion(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:910:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:911:1: error: unknown type name 'uint32_t'
+  911 | uint32_t HAL_GetREVID(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:911:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:912:1: error: unknown type name 'uint32_t'
+  912 | uint32_t HAL_GetDEVID(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:912:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:913:1: error: unknown type name 'uint32_t'
+  913 | uint32_t HAL_GetUIDw0(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:913:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:914:1: error: unknown type name 'uint32_t'
+  914 | uint32_t HAL_GetUIDw1(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:914:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:915:1: error: unknown type name 'uint32_t'
+  915 | uint32_t HAL_GetUIDw2(void);
+      | ^~~~~~~~
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:915:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+make: *** [Drivers/STM32F3xx_HAL_Driver/Src/subdir.mk:79: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+14:23:23 **** Incremental Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f303vctx.d" -MT"Core/Startup/startup_stm32f303vctx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f303vctx.o" "../Core/Startup/startup_stm32f303vctx.s"
+arm-none-eabi-gcc "../Core/Src/new_initialise.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_initialise.d" -MT"Core/Src/new_initialise.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_initialise.o"
+arm-none-eabi-gcc "../Core/Src/new_main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_main.d" -MT"Core/Src/new_main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_main.o"
+arm-none-eabi-gcc "../Core/Src/new_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_timer.d" -MT"Core/Src/new_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_timer.o"
+arm-none-eabi-gcc "../Core/Src/part_d_serial.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/part_d_serial.d" -MT"Core/Src/part_d_serial.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/part_d_serial.o"
+../Core/Src/new_main.c:9:10: fatal error: initialise.h: No such file or directory
+    9 | #include "initialise.h"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:28: Core/Src/new_main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+14:23:36 **** Clean-only build of configuration Debug for project test_exercise ****
+make -j20 clean 
+rm -rf ./Core/Startup/startup_stm32f303vctx.d ./Core/Startup/startup_stm32f303vctx.o
+rm -rf ./Core/Src/new_initialise.cyclo ./Core/Src/new_initialise.d ./Core/Src/new_initialise.o ./Core/Src/new_initialise.su ./Core/Src/new_main.cyclo ./Core/Src/new_main.d ./Core/Src/new_main.o ./Core/Src/new_main.su ./Core/Src/new_timer.cyclo ./Core/Src/new_timer.d ./Core/Src/new_timer.o ./Core/Src/new_timer.su ./Core/Src/part_d_serial.cyclo ./Core/Src/part_d_serial.d ./Core/Src/part_d_serial.o ./Core/Src/part_d_serial.su
+rm -rf default.size.stdout test_exercise.elf test_exercise.list test_exercise.map
+ 
+14:23:37 **** Incremental Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f303vctx.d" -MT"Core/Startup/startup_stm32f303vctx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f303vctx.o" "../Core/Startup/startup_stm32f303vctx.s"
+arm-none-eabi-gcc "../Core/Src/new_initialise.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_initialise.d" -MT"Core/Src/new_initialise.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_initialise.o"
+arm-none-eabi-gcc "../Core/Src/new_main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_main.d" -MT"Core/Src/new_main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_main.o"
+arm-none-eabi-gcc "../Core/Src/new_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_timer.d" -MT"Core/Src/new_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_timer.o"
+arm-none-eabi-gcc "../Core/Src/part_d_serial.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/part_d_serial.d" -MT"Core/Src/part_d_serial.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/part_d_serial.o"
+../Core/Src/new_main.c:12:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   12 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "test_exercise.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\test_exercise\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_exercise.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o): in function `_close_r':
+(.text._close_r+0xc): warning: _close is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o): in function `_lseek_r':
+(.text._lseek_r+0x10): warning: _lseek is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o): in function `_read_r':
+(.text._read_r+0x10): warning: _read is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o): in function `_write_r':
+(.text._write_r+0x10): warning: _write is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Startup/startup_stm32f303vctx.o: in function `Reset_Handler':
+C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/test_exercise/Debug/../Core/Startup/startup_stm32f303vctx.s:65: undefined reference to `SystemInit'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:63: test_exercise.elf] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+14:24:07 **** Incremental Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f303vctx.d" -MT"Core/Startup/startup_stm32f303vctx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f303vctx.o" "../Core/Startup/startup_stm32f303vctx.s"
+arm-none-eabi-gcc -o "test_exercise.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\test_exercise\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_exercise.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o): in function `_close_r':
+(.text._close_r+0xc): warning: _close is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o): in function `_lseek_r':
+(.text._lseek_r+0x10): warning: _lseek is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o): in function `_read_r':
+(.text._read_r+0x10): warning: _read is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o): in function `_write_r':
+(.text._write_r+0x10): warning: _write is not implemented and will always fail
+Finished building target: test_exercise.elf
+ 
+arm-none-eabi-size  test_exercise.elf 
+arm-none-eabi-objdump -h -S test_exercise.elf  > "test_exercise.list"
+   text	   data	    bss	    dec	    hex	filename
+   6164	    312	   1896	   8372	   20b4	test_exercise.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_exercise.list
+ 
+14:24:14 **** Incremental Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-size  test_exercise.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6164	    312	   1896	   8372	   20b4	test_exercise.elf
+Finished building: default.size.stdout
+ 
+14:35:37 **** Incremental Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/new_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_timer.d" -MT"Core/Src/new_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_timer.o"
+../Core/Src/new_timer.c: In function 'TIM2_IRQHandler':
+../Core/Src/new_timer.c:116:13: error: 'hardware_timer' undeclared (first use in this function); did you mean 'HardwareTimer'?
+  116 |             hardware_timer->TIMx->CR1 |= TIM_CR1_CEN;
+      |             ^~~~~~~~~~~~~~
+      |             HardwareTimer
+../Core/Src/new_timer.c:116:13: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:28: Core/Src/new_timer.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+14:36:11 **** Incremental Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/new_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_timer.d" -MT"Core/Src/new_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_timer.o"
+arm-none-eabi-gcc -o "test_exercise.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\test_exercise\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_exercise.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o): in function `_close_r':
+(.text._close_r+0xc): warning: _close is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o): in function `_lseek_r':
+(.text._lseek_r+0x10): warning: _lseek is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o): in function `_read_r':
+(.text._read_r+0x10): warning: _read is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o): in function `_write_r':
+(.text._write_r+0x10): warning: _write is not implemented and will always fail
+Finished building target: test_exercise.elf
+ 
+arm-none-eabi-size  test_exercise.elf 
+arm-none-eabi-objdump -h -S test_exercise.elf  > "test_exercise.list"
+   text	   data	    bss	    dec	    hex	filename
+   6148	    312	   1896	   8356	   20a4	test_exercise.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_exercise.list
+ 
+14:43:14 **** Incremental Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/new_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_timer.d" -MT"Core/Src/new_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_timer.o"
+arm-none-eabi-gcc -o "test_exercise.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\test_exercise\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_exercise.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o): in function `_close_r':
+(.text._close_r+0xc): warning: _close is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o): in function `_lseek_r':
+(.text._lseek_r+0x10): warning: _lseek is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o): in function `_read_r':
+(.text._read_r+0x10): warning: _read is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o): in function `_write_r':
+(.text._write_r+0x10): warning: _write is not implemented and will always fail
+Finished building target: test_exercise.elf
+ 
+arm-none-eabi-size  test_exercise.elf 
+arm-none-eabi-objdump -h -S test_exercise.elf  > "test_exercise.list"
+   text	   data	    bss	    dec	    hex	filename
+   6152	    312	   1896	   8360	   20a8	test_exercise.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_exercise.list
+ 
+14:46:45 **** Incremental Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/new_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_timer.d" -MT"Core/Src/new_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_timer.o"
+arm-none-eabi-gcc -o "test_exercise.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\test_exercise\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_exercise.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o): in function `_close_r':
+(.text._close_r+0xc): warning: _close is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o): in function `_lseek_r':
+(.text._lseek_r+0x10): warning: _lseek is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o): in function `_read_r':
+(.text._read_r+0x10): warning: _read is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o): in function `_write_r':
+(.text._write_r+0x10): warning: _write is not implemented and will always fail
+Finished building target: test_exercise.elf
+ 
+arm-none-eabi-size  test_exercise.elf 
+arm-none-eabi-objdump -h -S test_exercise.elf  > "test_exercise.list"
+   text	   data	    bss	    dec	    hex	filename
+   6124	    312	   1896	   8332	   208c	test_exercise.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_exercise.list
+ 
+14:56:54 **** Incremental Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/new_main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_main.d" -MT"Core/Src/new_main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_main.o"
+arm-none-eabi-gcc "../Core/Src/new_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_timer.d" -MT"Core/Src/new_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_timer.o"
+../Core/Src/new_main.c:12:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   12 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+../Core/Src/new_main.c: In function 'execute_command':
+../Core/Src/new_main.c:49:28: error: 'TIM4_init' undeclared (first use in this function); did you mean 'TIM2_init'?
+   49 |         set_one_shot_mode(&TIM4_init, delay, oneshot_callback);
+      |                            ^~~~~~~~~
+      |                            TIM2_init
+../Core/Src/new_main.c:49:28: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:28: Core/Src/new_main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+14:57:55 **** Incremental Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/new_main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_main.d" -MT"Core/Src/new_main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_main.o"
+arm-none-eabi-gcc "../Core/Src/new_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_timer.d" -MT"Core/Src/new_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_timer.o"
+../Core/Src/new_main.c:12:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   12 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "test_exercise.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\test_exercise\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_exercise.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o): in function `_close_r':
+(.text._close_r+0xc): warning: _close is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o): in function `_lseek_r':
+(.text._lseek_r+0x10): warning: _lseek is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o): in function `_read_r':
+(.text._read_r+0x10): warning: _read is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o): in function `_write_r':
+(.text._write_r+0x10): warning: _write is not implemented and will always fail
+Finished building target: test_exercise.elf
+ 
+arm-none-eabi-size  test_exercise.elf 
+arm-none-eabi-objdump -h -S test_exercise.elf  > "test_exercise.list"
+   text	   data	    bss	    dec	    hex	filename
+   6128	    352	   1896	   8376	   20b8	test_exercise.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_exercise.list
+ 
+15:00:15 **** Incremental Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/new_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_timer.d" -MT"Core/Src/new_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_timer.o"
+arm-none-eabi-gcc -o "test_exercise.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\test_exercise\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_exercise.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o): in function `_close_r':
+(.text._close_r+0xc): warning: _close is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o): in function `_lseek_r':
+(.text._lseek_r+0x10): warning: _lseek is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o): in function `_read_r':
+(.text._read_r+0x10): warning: _read is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o): in function `_write_r':
+(.text._write_r+0x10): warning: _write is not implemented and will always fail
+Finished building target: test_exercise.elf
+ 
+arm-none-eabi-size  test_exercise.elf 
+arm-none-eabi-objdump -h -S test_exercise.elf  > "test_exercise.list"
+   text	   data	    bss	    dec	    hex	filename
+   6128	    352	   1896	   8376	   20b8	test_exercise.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_exercise.list
+ 
+15:03:09 **** Incremental Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/new_main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_main.d" -MT"Core/Src/new_main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_main.o"
+arm-none-eabi-gcc "../Core/Src/new_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_timer.d" -MT"Core/Src/new_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_timer.o"
+../Core/Src/new_main.c:12:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   12 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "test_exercise.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\test_exercise\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_exercise.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o): in function `_close_r':
+(.text._close_r+0xc): warning: _close is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o): in function `_lseek_r':
+(.text._lseek_r+0x10): warning: _lseek is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o): in function `_read_r':
+(.text._read_r+0x10): warning: _read is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o): in function `_write_r':
+(.text._write_r+0x10): warning: _write is not implemented and will always fail
+Finished building target: test_exercise.elf
+ 
+arm-none-eabi-size  test_exercise.elf 
+arm-none-eabi-objdump -h -S test_exercise.elf  > "test_exercise.list"
+   text	   data	    bss	    dec	    hex	filename
+   6200	    352	   1896	   8448	   2100	test_exercise.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_exercise.list
+ 
+15:05:51 **** Incremental Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/new_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_timer.d" -MT"Core/Src/new_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_timer.o"
+arm-none-eabi-gcc -o "test_exercise.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\test_exercise\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_exercise.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o): in function `_close_r':
+(.text._close_r+0xc): warning: _close is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o): in function `_lseek_r':
+(.text._lseek_r+0x10): warning: _lseek is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o): in function `_read_r':
+(.text._read_r+0x10): warning: _read is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o): in function `_write_r':
+(.text._write_r+0x10): warning: _write is not implemented and will always fail
+Finished building target: test_exercise.elf
+ 
+arm-none-eabi-size  test_exercise.elf 
+arm-none-eabi-objdump -h -S test_exercise.elf  > "test_exercise.list"
+   text	   data	    bss	    dec	    hex	filename
+   6212	    352	   1896	   8460	   210c	test_exercise.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_exercise.list
+ 
+15:12:09 **** Incremental Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/new_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_timer.d" -MT"Core/Src/new_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_timer.o"
+arm-none-eabi-gcc -o "test_exercise.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\test_exercise\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_exercise.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o): in function `_close_r':
+(.text._close_r+0xc): warning: _close is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o): in function `_lseek_r':
+(.text._lseek_r+0x10): warning: _lseek is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o): in function `_read_r':
+(.text._read_r+0x10): warning: _read is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o): in function `_write_r':
+(.text._write_r+0x10): warning: _write is not implemented and will always fail
+Finished building target: test_exercise.elf
+ 
+arm-none-eabi-size  test_exercise.elf 
+arm-none-eabi-objdump -h -S test_exercise.elf  > "test_exercise.list"
+   text	   data	    bss	    dec	    hex	filename
+   6212	    352	   1896	   8460	   210c	test_exercise.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_exercise.list
+ 
+15:14:54 **** Incremental Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/new_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_timer.d" -MT"Core/Src/new_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_timer.o"
+arm-none-eabi-gcc -o "test_exercise.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\test_exercise\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_exercise.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o): in function `_close_r':
+(.text._close_r+0xc): warning: _close is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o): in function `_lseek_r':
+(.text._lseek_r+0x10): warning: _lseek is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o): in function `_read_r':
+(.text._read_r+0x10): warning: _read is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o): in function `_write_r':
+(.text._write_r+0x10): warning: _write is not implemented and will always fail
+Finished building target: test_exercise.elf
+ 
+arm-none-eabi-size  test_exercise.elf 
+arm-none-eabi-objdump -h -S test_exercise.elf  > "test_exercise.list"
+   text	   data	    bss	    dec	    hex	filename
+   6208	    352	   1896	   8456	   2108	test_exercise.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_exercise.list
+ 
+15:18:01 **** Incremental Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/new_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_timer.d" -MT"Core/Src/new_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_timer.o"
+arm-none-eabi-gcc -o "test_exercise.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\test_exercise\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_exercise.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o): in function `_close_r':
+(.text._close_r+0xc): warning: _close is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o): in function `_lseek_r':
+(.text._lseek_r+0x10): warning: _lseek is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o): in function `_read_r':
+(.text._read_r+0x10): warning: _read is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o): in function `_write_r':
+(.text._write_r+0x10): warning: _write is not implemented and will always fail
+Finished building target: test_exercise.elf
+ 
+arm-none-eabi-size  test_exercise.elf 
+arm-none-eabi-objdump -h -S test_exercise.elf  > "test_exercise.list"
+   text	   data	    bss	    dec	    hex	filename
+   6228	    352	   1896	   8476	   211c	test_exercise.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_exercise.list
+ 
