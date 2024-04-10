@@ -195,6 +195,9 @@ void setCompletionFunc(struct _HardwareTimer *hardware_timer, void (*completion_
 
 void set_one_shot_mode(struct _HardwareTimer *hardware_timer, uint32_t t_delay, void (*completion_function)()) {
 
+	// turn on the timer 
+	hardware_timer->TIMx->CR1 |= TIM_CR1_CEN; 
+
 	// set the one shot mode to 1
 	hardware_timer->oneShotMode = 1;
 
