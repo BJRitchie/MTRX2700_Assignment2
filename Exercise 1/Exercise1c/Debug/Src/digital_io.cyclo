@@ -1,0 +1,7 @@
+C:/Users/ranje/OneDrive/Desktop/mtrx2assignmnet2/mtrx2assignment2/git/MTRX2700-2024/stm32f303-definitions/Core/Inc/core_cm4.h:1688:22:__NVIC_EnableIRQ	2
+C:/Users/ranje/OneDrive/Desktop/mtrx2assignmnet2/mtrx2assignment2/git/MTRX2700-2024/stm32f303-definitions/Core/Inc/core_cm4.h:1816:22:__NVIC_SetPriority	2
+../Src/digital_io.c:11:6:EXTI0_IRQHandler	2
+../Src/digital_io.c:18:6:digital_io_init	1
+../Src/digital_io.c:48:6:toggle_led	1
+../Src/digital_io.c:52:6:led_chase	3
+../Src/digital_io.c:64:6:set_button_handler	1
