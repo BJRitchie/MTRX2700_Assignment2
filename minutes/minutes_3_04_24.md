@@ -20,13 +20,13 @@ Finish exercises 1-3 and move on to exercise 4 together
 
 ### New Items
 Exercise 1: 
-- Nadeesha (in-progress)
+- Nadeesha (in progress)
 
 Exercise 2: 
-- Sebastian (in-progress)
+- Sebastian (in progress)
 
 Exercise 3: 
-- Ben (in-progress)
+- Ben (in progress)
 
 Aim to complete these exercises by the next lab (10/04/24). 
 
