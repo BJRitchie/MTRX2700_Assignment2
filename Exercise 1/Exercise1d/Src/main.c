@@ -1,27 +1,28 @@
 #include "digital_io.h"
 #include <stdbool.h>
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 #define NUM_LEDS 8
 
-static bool led_chase_enabled = false;
+bool led_chase_enabled = false;
 
 void button_press_handler() {
+    led_chase_enabled = !led_chase_enabled;  // Toggle the chase sequence on/off
     if (!led_chase_enabled) {
-        led_chase();
-        led_chase_enabled = true;
-    } else {
-        // Turn off all LEDs
+        // Turn off all LEDs if chase is disabled
         for (int i = 0; i < NUM_LEDS; i++) {
-            toggle_led(i);
+            turn_off_led(i);
         }
-        led_chase_enabled = false;
     }
 }
 
 int main(void) {
     digital_io_init(&button_press_handler); // Pass function pointer to button press handler
     while (1) {
-        // Main application loop
-        // This loop may contain other tasks or remain empty
+        if (led_chase_enabled) {
+            led_chase();  // Run the LED chase sequence
+        }
     }
 }
