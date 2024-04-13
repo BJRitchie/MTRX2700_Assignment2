@@ -5,8 +5,12 @@
 #define NUM_LEDS 8
 
 static ButtonPressCallback button_press_callback = NULL;
-static bool led_chase_running = false;
-static uint32_t led_speed_ms = 100; // Default LED chase speed in milliseconds
+static uint32_t led_speed_ms = 1000; // Default LED chase speed in milliseconds
+extern bool led_chase_enabled;
+
+void turn_off_led(uint8_t led_num) {
+    GPIOE->ODR &= ~(1 << (led_num + 8)); // Turn off corresponding LED
+}
 
 void EXTI0_IRQHandler(void) {
     if (button_press_callback != NULL) {
@@ -51,13 +55,10 @@ void toggle_led(uint8_t led_num) {
 
 void led_chase() {
     static uint8_t current_led = 0;
-    if (!led_chase_running) {
-        led_chase_running = true;
-        while (1) {
-            toggle_led(current_led); // Toggle LED
-            current_led = (current_led + 1) % NUM_LEDS; // Move to next LED
-            for (volatile uint32_t i = 0; i < led_speed_ms * 1000; i++); // Delay
-        }
+    if (led_chase_enabled) {
+        toggle_led(current_led); // Toggle LED
+        current_led = (current_led + 1) % NUM_LEDS; // Move to next LED
+        for (volatile uint32_t i = 0; i < led_speed_ms * 500; i++); // Delay
     }
 }
 
