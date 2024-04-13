@@ -11,6 +11,9 @@ typedef struct _HardwareTimer HardwareTimer;
 // make instance for TIM2
 extern HardwareTimer TIM2_init;
 
+// instance for TIM4
+extern HardwareTimer TIM4_init;
+
 // initialise timer
 // inputs:
 // - hardware_timer: pointer to a struct containing
