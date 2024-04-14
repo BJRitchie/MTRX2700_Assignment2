@@ -1,4 +1,4 @@
-# MTRX2700 Assignment 2 README File Wednesay PM
+# MTRX2700 Assignment 2 README File Wednesday PM
 ## Project Details:
 The C Lab assignment is comprised of 3 primary C programming exercises for the STM32F303Discovery Microcontroller with 1 modular integration exercise.
 
