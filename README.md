@@ -2,8 +2,6 @@
 ## Project Details:
 The C Lab assignment is comprised of 3 primary C programming exercises for the STM32F303Discovery Microcontroller with 1 modular integration exercise.
 
-## R
-
 ## Group Members
 - Sebastian O'Connell (520443826)
 - Ben Ritchie (SID)
