@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
+// Include relevant header files
 #include "serial.h"
 #include "stm32f303xc.h"
 
@@ -24,7 +25,6 @@ void received_new_string(uint8_t *buffer, uint32_t bytes_sent) {
 
 int main(void) {
     SerialInitialise(BAUD_115200, &USART1_PORT, finished_transmission, received_new_string);
-    //run_serial_test();
     for (;;) {
     }
 }
