@@ -66,7 +66,11 @@ void setCompletionFunc(struct _HardwareTimer *hardware_timer, void (*completion_
 // function to set hardware_timer to one-shot-mode
 // - hardware_timer: pointer to the hardware timer in question
 // - delay: the delay before the timer is triggered in microseconds
-// note: TimerInitialise should be used first.
-void set_one_shot_mode(struct _HardwareTimer *hardware_timer, uint32_t delay, void (*completion_function)());
+void setOneShotMode(struct _HardwareTimer *hardware_timer, uint32_t delay, void (*completion_function)());
+
+// function to set hardware_timer to continuous mode
+// - hardware_timer: pointer to the hardware timer in question
+// - delay: the delay before the timer is triggered in microseconds
+void setContinuousMode(struct _HardwareTimer *hardware_timer, uint32_t period, void (*timer_callback)());
 
 #endif

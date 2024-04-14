@@ -1,10 +1,17 @@
-22:36:23 **** Incremental Build of configuration Debug for project task_3_2 ****
+14:40:07 **** Incremental Build of configuration Debug for project task_3_2 ****
 make -j20 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc -o "task_3_2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3\task_3_2\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="task_3_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: task_3_2.elf
+ 
 arm-none-eabi-size  task_3_2.elf 
+arm-none-eabi-objdump -h -S task_3_2.elf  > "task_3_2.list"
    text	   data	    bss	    dec	    hex	filename
-   1276	     44	   1564	   2884	    b44	task_3_2.elf
+   1344	     44	   1564	   2952	    b88	task_3_2.elf
 Finished building: default.size.stdout
  
+Finished building: task_3_2.list
+ 
 
-22:36:23 Build Finished. 0 errors, 0 warnings. (took 216ms)
+14:40:07 Build Finished. 0 errors, 0 warnings. (took 677ms)
 

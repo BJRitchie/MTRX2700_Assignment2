@@ -1,4 +1,4 @@
-
+#include <string.h>
 #include "timer.h"
 #include "stm32f303xc.h"
 
@@ -21,8 +21,8 @@ struct _HardwareTimer {
 HardwareTimer TIM2_init = {
 		TIM2,
 		1, 					// default prescaler value
+		1000,				// overflow value
 		FALSE, 				// not in one-shot mode
-		100,
 		0x00, 				// bit to enable APB2 bus
 		RCC_APB1ENR_TIM2EN, // bit to enable APB1 bus
 		0x00, 				// bit to enable for AHB bus
@@ -30,6 +30,22 @@ HardwareTimer TIM2_init = {
 		TIM_DIER_UIE, 		// enable update interrupt
 		0x00,
 };
+
+HardwareTimer TIM4_init = {
+		TIM4,
+		1, 					// default prescaler value
+		1000, 				// default overflow value
+		FALSE, 				// not in one-shot mode
+		0x00, 				// bit to enable APB2 bus
+		RCC_APB1ENR_TIM4EN, // bit to enable APB1 bus
+		0x00, 				// bit to enable for AHB bus
+		TIM_CR1_URS, 		// bit for CR1 reg; interrupt only flagged at over/underflow
+		TIM_DIER_UIE, 		// enable update interrupt
+		0x00,
+};
+
+
+
 
 // initialise a hardware timer
 void TimerInitialise(HardwareTimer *hardware_timer, void (*completion_function)()) {
@@ -57,23 +73,40 @@ void TimerInitialise(HardwareTimer *hardware_timer, void (*completion_function)(
 
 }
 
-void TIM2_IRQHandler(void){
-	// Check if the interrupt is due to an overflow
-	if (TIM2->SR & TIM_SR_UIF) {
-		// Clear the update interrupt flag
-		TIM2->SR &= ~TIM_SR_UIF;
+// tim2 overflow handler
+void TIM2_IRQHandler(void) {
+    if (TIM2->SR & TIM_SR_UIF) {
+        TIM2->SR &= ~TIM_SR_UIF; // Clear the interrupt flag
 
-		// Run the overflow handler
-		if (TIM2_init.timer_completion_function != 0x00) {
-			TIM2_init.timer_completion_function();
+        if (TIM2_init.oneShotMode) {
+            TIM2->CR1 &= ~TIM_CR1_CEN; // Stop the timer if in one-shot mode
 
-			if (TIM2_init.oneShotMode == TRUE){
-				// turn off the timer
-				TIM2->CR1 |= ~TIM_CR1_CEN;
-			}
-		}
-	}
+            TIM2_init.oneShotMode = 0; // turn off the oneshot mode
+        }
+
+        if (TIM2_init.timer_completion_function != NULL) {
+            TIM2_init.timer_completion_function();
+        }
+    }
 }
+
+// tim4 overflow handler
+void TIM4_IRQHandler(void) {
+    if (TIM4->SR & TIM_SR_UIF) {
+        TIM4->SR &= ~TIM_SR_UIF; // Clear the interrupt flag
+
+        if (TIM4_init.oneShotMode) {
+            TIM4->CR1 &= ~TIM_CR1_CEN; // Stop the timer if in one-shot mode
+
+            TIM4_init.oneShotMode = 0; // turn off the oneshot mode
+        }
+
+        if (TIM4_init.timer_completion_function != NULL) {
+            TIM4_init.timer_completion_function();
+        }
+    }
+}
+
 
 // enable the timer overflow interrupt
 void enable_timer_interrupt() {
@@ -82,6 +115,9 @@ void enable_timer_interrupt() {
 
 	NVIC_SetPriority(TIM2_IRQn, 1); // Set priority
     NVIC_EnableIRQ(TIM2_IRQn); 		// Enable TIM2 IRQ
+
+	NVIC_SetPriority(TIM4_IRQn, 1); // Set priority
+    NVIC_EnableIRQ(TIM4_IRQn); 		// Enable TIM2 IRQ
 
     // re-enable interrupts
     __enable_irq();
@@ -136,28 +172,48 @@ void setARRValue(struct _HardwareTimer *hardware_timer, uint32_t value) {
 // input:
 // - hardware_timer: pointer to the hardware timer where the period is being set
 // - period: the delay period in microseconds
+
 void setPeriod(struct _HardwareTimer *hardware_timer, uint32_t period) {
 	setARRValue(hardware_timer, period);  	// set overflow to period value
-	setPrescaleValue(hardware_timer, 8-1); 	// make clock freq 1MHz
+	setPrescaleValue(hardware_timer, 8000-1); 	// make clock freq 1MHz
 }
+
+
+//void setPeriod(struct _HardwareTimer *hardware_timer, uint32_t period_ms) {
+//    uint32_t timer_clock = 8000000 / (hardware_timer->PrescaleValue + 1);
+//    uint32_t timer_ticks = (timer_clock / 1000) * period_ms;  // Convert milliseconds to ticks
+//
+//    setARRValue(hardware_timer, timer_ticks - 1);  // Set auto-reload register
+//}
 
 void setCompletionFunc(struct _HardwareTimer *hardware_timer, void (*completion_function)()){
 	hardware_timer->timer_completion_function = completion_function;
 }
 
 
-void set_one_shot_mode(struct _HardwareTimer *hardware_timer, uint32_t t_delay, void (*completion_function)()) {
+void setOneShotMode(struct _HardwareTimer *hardware_timer, uint32_t t_delay, void (*completion_function)()) {
 
-	// turn on the timer 
-	hardware_timer->TIMx->CR1 |= TIM_CR1_CEN; 
-	
+	// initialise the timer
+	TimerInitialise(hardware_timer, completion_function);
+
+	// set timer period
+	setPeriod(hardware_timer, t_delay);
+
 	// set the one shot mode to 1
 	hardware_timer->oneShotMode = 1;
 
-	setPeriod(hardware_timer, t_delay);
-
-	setCompletionFunc(hardware_timer, completion_function);
 }
 
+void setContinuousMode(struct _HardwareTimer *hardware_timer, uint32_t period, void (*timer_callback)()) {
+    // Example implementation; adjust as per your timer setup
 
+	// initialise the timer
+	TimerInitialise(hardware_timer, timer_callback);
+
+	// Set timer period
+    setPeriod(hardware_timer, period);
+
+    // Ensure one-shot mode is disabled
+    hardware_timer->oneShotMode = 0;
+}
 

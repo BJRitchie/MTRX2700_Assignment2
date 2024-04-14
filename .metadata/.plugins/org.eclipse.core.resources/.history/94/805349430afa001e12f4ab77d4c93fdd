@@ -1,0 +1,10 @@
+
+#ifndef INITIALISE_HEADER
+#define INITIALISE_HEADER
+
+#include <stdint.h>
+
+// initialise the discovery board I/O (just outputs: inputs are selected by default)
+void initialise_leds();
+
+#endif

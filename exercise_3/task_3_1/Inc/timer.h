@@ -4,15 +4,23 @@
 
 #include <stdint.h>
 
-// enable the clocks for desired peripherals (GPIOA, C and E)
-void enable_clocks();
+// Defining the hardware timer struct
+struct _HardwareTimer;
+typedef struct _HardwareTimer HardwareTimer;
 
-/* function to initialise the timer with interrupt at overflow
- * Inputs:
- * - int period: desired period between actions in milliseconds
- *
- * Outputs:
- * - None */
-void TIM2_interrupt_init(uint32_t period);
+// make instance for TIM2
+extern HardwareTimer TIM2_init;
+
+// initialise timer
+// inputs:
+// - hardware_timer: pointer to a struct containing
+//	 the initialisation variables for the desired timer
+// - delay: the delay between interrupts in milliseconds
+// - completion_function: a pointer to the function to be
+// 	 completed when an interrupt is encountered.
+void TimerInitialise(HardwareTimer *hardware_timer, uint16_t delay, void (*completion_function)());
+
+// enable the timer interrupts
+void enable_timer_interrupt();
 
 #endif

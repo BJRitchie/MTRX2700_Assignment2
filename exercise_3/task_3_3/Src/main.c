@@ -20,9 +20,9 @@ int main(void) {
 	initialise_board();
 	enable_timer_interrupt();
 
-//	setPeriod(&TIM2_init, 1000000);
-	TimerInitialise(&TIM2_init, 0x00);
-	set_one_shot_mode(&TIM2_init, 1000000, &one_shot);
+	TimerInitialise(&TIM2_init, 0x00); // init timer with no completion function
+	uint32_t delay = 1000; // delay in milliseconds
+	setOneShotMode(&TIM2_init, delay, &one_shot); // set timer to one shot mode
 
     /* Loop forever */
 	for(;;);
