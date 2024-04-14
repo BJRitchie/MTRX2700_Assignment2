@@ -62,7 +62,7 @@ The project is broken into two modules - one for timers, and another for the LED
 - TimerInitialise: function to initialise and start a hardware timer 
 - enable_timer_interrupt: function that enables the global interrupts for timer 2. 
 
-#### LED Model
+#### LED Module
 - initialise_leds: configures the LEDs so they can be turned on and off
 - enable_clocks: enables the peripherals to use the LEDs 
 - chase_led: a function that makes a single LED go around in circles 
@@ -76,18 +76,22 @@ Test values for period ranging from 100-10000ms. These delays will be visible, a
 This task involved the application of get/set functions to change timer settings like the period. 
 
 ### Usage
-Each of the get/set functions require a pointer to the timer struct containing the relevant information, and the set functions require a second input with the variable to be set. 
+Each of the get/set functions require a pointer to the timer struct containing the relevant information, and the set functions also require the variable to be set. 
 
 ### Valid input
+There is a predefined struct named TIM2_init that contains valid initialisation paramters for timer 2, and the period can be set from 1 to 2^{32}-1 milliseconds. The timer completion function can also be set using a pointer to a function outputting nothing and without any inputs. 
 
 ### Functions and modularity
-
 #### Timer Module 
+A module containing the struct and functions for to initialise a hardware timer. Includes: 
+- TimerInitialise: initialise and start the timer,
+- enable_timer_interrupt: enable global interrupts,
+- The associated get/set functions for the timer. 
+
+#### LED Module
+This module is unchanged. 
 
 ### Testing
-
-
-### Exercise 3:
-
+Running the task_3_2 project will demonstrate periods of decreasing length. Otherwise, one can input a delay of 1000 and test 10 cycles, then average to confirm the average period. 
 
 ### Exercise 4:
