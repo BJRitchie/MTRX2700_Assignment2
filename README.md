@@ -30,6 +30,9 @@ The C Lab assignment is comprised of 3 primary C programming exercises for the S
 #### Part B - Callback Function:
 - Establishes a callback function during the initialisation of the module
 - Re-transmits the string back over the UART
+##### Testing Plan:
+- Enter a string into the PuTTY terminal once the code is running
+- The string should be re-transmitted back to the terminal
 #### Part C - Interrupt-Based Receiving:
 - Adapts the serial receiving process to an interrupt-based approach
 - Interrupt used to handle data reception dynamically
@@ -39,6 +42,8 @@ The C Lab assignment is comprised of 3 primary C programming exercises for the S
   - Double buffer used to allow the serial interface to continue receiving new characters into one buffer while the previously received string is being procesed from another buffer
   - Swaps between two buffers upon completing the reception of one string, alloiwing continuous data handling without losing data
   - Buffer switching managing in the interrupt handler to ensure smooth flow of data and efficient processing
+##### Testing Plan:
+- 
 
 ### Exercise 3:
 
