@@ -26,12 +26,12 @@ The C Lab assignment is comprised of 3 primary C programming exercises for the S
 
 ### Exercise 2:
 #### Part A - Basic Functionality:
-- Developed module that reads incoming characters into a memory buffer over UART
+- Develops module that reads incoming characters into a memory buffer over UART
 #### Part B - Callback Function:
-- Established a callback function during the initialisation of the module
+- Establishes a callback function during the initialisation of the module
 - Re-transmits the string back over the UART
 #### Part C - Interrupt-Based Receiving:
-- Adapted the serial receiving process to an interrupt-based approach
+- Adapts the serial receiving process to an interrupt-based approach
 - Interrupt used to handle data reception dynamically
 #### Part D - Advanced Functionality:
 - Re-transmits the string using interrupts
