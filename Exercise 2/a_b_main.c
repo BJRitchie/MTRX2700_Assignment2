@@ -12,10 +12,6 @@ void finished_transmission(uint32_t bytes_sent) {
 }
 
 // Callback function that echoes the received string back to the sender
-void received_new_string(uint8_t *buffer, uint32_t bytes_sent) {
-	SerialOutputString(buffer, &USART1_PORT);
-}
-
 void receive_callback(uint8_t* buffer, uint32_t length) {
 	SerialOutputString(buffer, &USART1_PORT);
 }
