@@ -43,7 +43,49 @@ The C Lab assignment is comprised of 3 primary C programming exercises for the S
   - Swaps between two buffers upon completing the reception of one string, alloiwing continuous data handling without losing data
   - Buffer switching managing in the interrupt handler to ensure smooth flow of data and efficient processing
 ##### Testing Plan:
-- 
+
+
+## Exercise 3.1: Continuous Timer 
+### Summary
+This task involved the configuration and operation of a continous timer using hardware clocks. It required the use of interrupts to enable modularity in the code, so other tasks can be done while the timer ticks in the background. 
+
+### Usage
+TimerInitialise can be used to initialise the desired timer, setting it to operate in a continous manner by default. Input a pointer to the struct containing the relevant initialisation information, a delay period in milliseconds, and a pointer to the completion function. When run, the timer will start and generate an intrrupt after the entered delay period. 
+
+### Valid input
+A struct for timer 2 (TIM2_init) is prepared and can be used, and a delay/period input of up to (2^32-1 = 4.3*10^9)ms can be input. The completion function must return nothing, and have no inputs. 
+
+### Functions and modularity
+The project is broken into two modules - one for timers, and another for the LEDs. 
+
+#### Timer Module 
+- TimerInitialise: function to initialise and start a hardware timer 
+- enable_timer_interrupt: function that enables the global interrupts for timer 2. 
+
+#### LED Model
+- initialise_leds: configures the LEDs so they can be turned on and off
+- enable_clocks: enables the peripherals to use the LEDs 
+- chase_led: a function that makes a single LED go around in circles 
+
+### Testing
+Test values for period ranging from 100-10000ms. These delays will be visible, at 0.1s-10s intervals. One can verify the accuracy of the timer by timing how long it takes for the LEDs to change 10 times, then averaging the period. 
+
+
+## Exercise 3.2: 
+### Summary
+This task involved the application of get/set functions to change timer settings like the period. 
+
+### Usage
+Each of the get/set functions require a pointer to the timer struct containing the relevant information, and the set functions require a second input with the variable to be set. 
+
+### Valid input
+
+### Functions and modularity
+
+#### Timer Module 
+
+### Testing
+
 
 ### Exercise 3:
 
