@@ -9,8 +9,9 @@
 struct _HardwareTimer;
 typedef struct _HardwareTimer HardwareTimer;
 
-// make instance for TIM2
+// make instance for timers
 extern HardwareTimer TIM2_init;
+extern HardwareTimer TIM4_init;
 
 // initialise timer
 // inputs:
