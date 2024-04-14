@@ -94,4 +94,26 @@ This module is unchanged.
 ### Testing
 Running the task_3_2 project will demonstrate periods of decreasing length. Otherwise, one can input a delay of 1000 and test 10 cycles, then average to confirm the average period. 
 
+
+## Exercise 3.3: 
+### Summary
+This task uses a timer in a one-shot configuration. That is, the timer is initialised with a specified delay time, then completes some program when the delay time is up, then stops. This program uses two timers in a one-shot configuration to first turn on the board's LEDs, then turn them off. 
+
+### Usage
+The setOneShot function can be used to start the timer in a one-shot mode, and takes a completion function as a paramter so the user can complete some function after a specific delay. 
+
+### Valid input
+The setOneShot function requires a pointer to a HardwareTimer struct containing initialisation parameters. It also requires an input defining the delay, which can be set from 1 to 2^{32}-1. Finally, it requires a pointer to a function that returns nothing and takes no inputs, for the completion function.
+
+### Functions and modularity
+#### Timer Module 
+This module is unchanged besides the setOneShot function discussed above. 
+
+#### LED Module
+This module is unchanged. 
+
+### Testing
+One can adjust the delay parameters for TIM2 and TIM4, seen in the main file to show the operation of the module. Both are initialised at (essentially) the same time and run parallel. As such, if the first delay was 1000ms, and the second delay was 5000ms, the LEDs would turn on after 1 second, remain on for 4 seconds, then turn off and remain off.
+
+
 ### Exercise 4:
