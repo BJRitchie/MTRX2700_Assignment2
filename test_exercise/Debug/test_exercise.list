@@ -439,9 +439,6 @@ int main(void) {
  800046e:	2004      	movs	r0, #4
  8000470:	f000 f9aa 	bl	80007c8 <SerialInitialise>
 
-//	TimerInitialise(&TIM2_init, NULL);
-	//set_one_shot_mode(&TIM2_init, 1000000, &one_shot);
-
     for (;;) {
  8000474:	e7fe      	b.n	8000474 <main+0x1c>
  8000476:	bf00      	nop

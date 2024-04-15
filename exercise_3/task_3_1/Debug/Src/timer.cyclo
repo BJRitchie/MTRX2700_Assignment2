@@ -1,5 +1,0 @@
-C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc/core_cm4.h:1688:22:__NVIC_EnableIRQ	2
-C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc/core_cm4.h:1816:22:__NVIC_SetPriority	2
-../Src/timer.c:35:6:TIM2_IRQHandler	3
-../Src/timer.c:49:6:TimerInitialise	1
-../Src/timer.c:77:6:enable_timer_interrupt	1

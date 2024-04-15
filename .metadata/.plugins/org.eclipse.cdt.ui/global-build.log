@@ -5056,3 +5056,642 @@ Finished building: default.size.stdout
  
 Finished building: task_3_3.list
  
+20:11:59 **** Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f303vctx.d" -MT"Startup/startup_stm32f303vctx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f303vctx.o" "../Startup/startup_stm32f303vctx.s"
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+In file included from ../Src/led.c:2:
+../Inc/timer.h:6:10: fatal error: stm32f303xc.h: No such file or directory
+    6 | #include "stm32f303xc.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:31: Src/led.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Src/main.c:3:10: fatal error: stm32f303xc.h: No such file or directory
+    3 | #include "stm32f303xc.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:31: Src/main.o] Error 1
+In file included from ../Src/timer.c:2:
+../Inc/timer.h:6:10: fatal error: stm32f303xc.h: No such file or directory
+    6 | #include "stm32f303xc.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:31: Src/timer.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+20:12:35 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+../Src/main.c:9:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    9 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/timer.c: In function 'setOneShotMode':
+../Src/timer.c:206:41: error: 'period' undeclared (first use in this function); did you mean 'getPeriod'?
+  206 |         TimerInitialise(hardware_timer, period, completion_function);
+      |                                         ^~~~~~
+      |                                         getPeriod
+../Src/timer.c:206:41: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/subdir.mk:31: Src/timer.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+20:13:01 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1508	     88	   1568	   3164	    c5c	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:13:07 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-size  exercise_3_final.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1508	     88	   1568	   3164	    c5c	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+20:13:57 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:9:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    9 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:25:37: error: 'period' undeclared (first use in this function); did you mean 'getPeriod'?
+   25 |         TimerInitialise(&TIM2_init, period, &chase_led_changing_period);
+      |                                     ^~~~~~
+      |                                     getPeriod
+../Src/main.c:25:37: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/subdir.mk:31: Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+
+**** Build of configuration Debug for project stm32f303-definitions ****
+
+Nothing to build for project stm32f303-definitions
+20:13:57 **** Incremental Build of configuration Debug for project task_3_1 ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+arm-none-eabi-gcc -o "task_3_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3\task_3_1\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="task_3_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: task_3_1.elf
+ 
+arm-none-eabi-size  task_3_1.elf 
+arm-none-eabi-objdump -h -S task_3_1.elf  > "task_3_1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1188	     48	   1568	   2804	    af4	task_3_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: task_3_1.list
+ 
+20:13:58 **** Incremental Build of configuration Debug for project task_3_2 ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+arm-none-eabi-gcc -o "task_3_2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3\task_3_2\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="task_3_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: task_3_2.elf
+ 
+arm-none-eabi-size  task_3_2.elf 
+arm-none-eabi-objdump -h -S task_3_2.elf  > "task_3_2.list"
+   text	   data	    bss	    dec	    hex	filename
+   1344	     44	   1564	   2952	    b88	task_3_2.elf
+Finished building: default.size.stdout
+ 
+Finished building: task_3_2.list
+ 
+20:13:59 **** Incremental Build of configuration Debug for project task_3_3 ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+../Src/main.c:9:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    9 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "task_3_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3\task_3_3\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="task_3_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: task_3_3.elf
+ 
+arm-none-eabi-size  task_3_3.elf 
+arm-none-eabi-objdump -h -S task_3_3.elf  > "task_3_3.list"
+   text	   data	    bss	    dec	    hex	filename
+   1496	     88	   1568	   3152	    c50	task_3_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: task_3_3.list
+ 
+20:13:59 **** Incremental Build of configuration Debug for project test_exercise ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/new_main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_main.d" -MT"Core/Src/new_main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_main.o"
+arm-none-eabi-gcc "../Core/Src/new_timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/new_timer.d" -MT"Core/Src/new_timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/new_timer.o"
+../Core/Src/new_main.c:12:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   12 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "test_exercise.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\test_exercise\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_exercise.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o): in function `_close_r':
+(.text._close_r+0xc): warning: _close is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o): in function `_lseek_r':
+(.text._lseek_r+0x10): warning: _lseek is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o): in function `_read_r':
+(.text._read_r+0x10): warning: _read is not implemented and will always fail
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o): in function `_write_r':
+(.text._write_r+0x10): warning: _write is not implemented and will always fail
+Finished building target: test_exercise.elf
+ 
+arm-none-eabi-size  test_exercise.elf 
+arm-none-eabi-objdump -h -S test_exercise.elf  > "test_exercise.list"
+   text	   data	    bss	    dec	    hex	filename
+   6228	    352	   1896	   8476	   211c	test_exercise.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_exercise.list
+ 
+20:14:13 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:9:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    9 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1672	     88	   1568	   3328	    d00	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:15:12 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-size  exercise_3_final.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1672	     88	   1568	   3328	    d00	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+20:17:07 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-size  exercise_3_final.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1672	     88	   1568	   3328	    d00	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+20:18:15 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-size  exercise_3_final.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1672	     88	   1568	   3328	    d00	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+20:19:30 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1672	     88	   1568	   3328	    d00	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:20:33 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-size  exercise_3_final.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1672	     88	   1568	   3328	    d00	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+20:21:46 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1672	     88	   1568	   3328	    d00	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:23:03 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+../Src/timer.c: In function 'getPeriod':
+../Src/timer.c:187:18: warning: unused variable 'psc_val' [-Wunused-variable]
+  187 |         uint16_t psc_val = getPrescaleValue(hardware_timer);
+      |                  ^~~~~~~
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1652	     88	   1568	   3308	    cec	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:26:30 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+../Src/main.c:9:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    9 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1664	     88	   1568	   3320	    cf8	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:27:04 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1664	     88	   1568	   3320	    cf8	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:34:45 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+../Src/timer.c: In function 'getPeriod':
+../Src/timer.c:189:15: warning: unused variable 'clock_freq' [-Wunused-variable]
+  189 |         float clock_freq = (float)CLOCK_FREQUENCY / (psc_val+1);
+      |               ^~~~~~~~~~
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1708	     88	   1568	   3364	    d24	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:37:35 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-size  exercise_3_final.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1708	     88	   1568	   3364	    d24	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+20:38:08 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-size  exercise_3_final.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1708	     88	   1568	   3364	    d24	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+20:40:42 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1636	     88	   1568	   3292	    cdc	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:41:20 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-size  exercise_3_final.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1636	     88	   1568	   3292	    cdc	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+20:42:05 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1588	     88	   1568	   3244	    cac	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:42:59 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:9:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    9 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1588	     88	   1568	   3244	    cac	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:44:01 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:9:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    9 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1588	     88	   1568	   3244	    cac	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:45:54 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:9:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    9 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1584	     88	   1568	   3240	    ca8	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:47:04 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:9:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    9 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1584	     88	   1568	   3240	    ca8	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:48:37 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1584	     88	   1568	   3240	    ca8	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:49:32 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1584	     88	   1568	   3240	    ca8	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:50:40 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1584	     88	   1568	   3240	    ca8	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:52:44 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1584	     88	   1568	   3240	    ca8	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:57:56 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:9:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    9 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1388	     88	   1568	   3044	    be4	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+20:58:37 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-size  exercise_3_final.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1388	     88	   1568	   3044	    be4	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+20:59:57 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-size  exercise_3_final.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1388	     88	   1568	   3044	    be4	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+21:02:10 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:9:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    9 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1388	     88	   1568	   3044	    be4	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+21:02:41 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:9:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    9 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1392	     88	   1568	   3048	    be8	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+21:03:13 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:9:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    9 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1392	     88	   1568	   3048	    be8	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+21:04:50 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+../Src/main.c:9:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    9 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1384	     88	   1568	   3040	    be0	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+21:07:35 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1384	     88	   1568	   3040	    be0	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+21:09:05 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1384	     88	   1568	   3040	    be0	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+21:11:45 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+../Src/main.c:9:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    9 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1380	     88	   1568	   3036	    bdc	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+21:15:07 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1516	     88	   1568	   3172	    c64	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 

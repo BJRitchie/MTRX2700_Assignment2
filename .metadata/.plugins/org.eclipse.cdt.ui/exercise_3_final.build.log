@@ -1,0 +1,17 @@
+21:15:07 **** Incremental Build of configuration Debug for project exercise_3_final ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F303VCTx -DSTM32 -DSTM32F3 -DSTM32F3DISCOVERY -c -I../Inc -I"C:/Users/benri/OneDrive/Documents/MTRX2700/MTRX2700_Assignment2/stm32f303-definitions/Core/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+arm-none-eabi-gcc -o "exercise_3_final.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\benri\OneDrive\Documents\MTRX2700\MTRX2700_Assignment2\exercise_3_final\STM32F303VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise_3_final.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise_3_final.elf
+ 
+arm-none-eabi-size  exercise_3_final.elf 
+arm-none-eabi-objdump -h -S exercise_3_final.elf  > "exercise_3_final.list"
+   text	   data	    bss	    dec	    hex	filename
+   1516	     88	   1568	   3172	    c64	exercise_3_final.elf
+Finished building: default.size.stdout
+ 
+Finished building: exercise_3_final.list
+ 
+
+21:15:08 Build Finished. 0 errors, 0 warnings. (took 627ms)
+

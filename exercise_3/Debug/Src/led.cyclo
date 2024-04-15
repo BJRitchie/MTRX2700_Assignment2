@@ -1,0 +1,6 @@
+../Src/led.c:7:6:initialise_leds	1
+../Src/led.c:15:6:enable_clocks	1
+../Src/led.c:20:6:chase_led	3
+../Src/led.c:37:6:led_on	1
+../Src/led.c:42:6:led_off	1
+../Src/led.c:48:6:chase_led_changing_period	3
