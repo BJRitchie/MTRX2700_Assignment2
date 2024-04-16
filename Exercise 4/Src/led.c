@@ -26,14 +26,22 @@ void chase_led(){
 	}
 }
 
-void led_on(void) {
-	uint8_t *led_register = ((uint8_t*)&(GPIOE->ODR)) + 1;
-	*led_register = 0xFF;
+void set_led(uint8_t led_num) {
+    if (led_num < 8) { // Ensure the LED number is within 0-7 range
+        GPIOE->BSRR = (1 << (led_num + 8)); // Set bit to turn on LED
+    }
 }
 
-void led_off(void) {
-	uint8_t *led_register = ((uint8_t*)&(GPIOE->ODR)) + 1;
-	*led_register = 0x00;
+void clear_led(uint8_t led_num) {
+    if (led_num < 8) { // Ensure the LED number is within 0-7 range
+        GPIOE->BRR = (1 << (led_num + 8)); // Clear bit to turn off LED
+    }
+}
+
+void toggle_led(uint8_t led_num) {
+    if (led_num < 8) { // Ensure the LED number is within 0-7 range
+        GPIOE->ODR ^= (1 << (led_num + 8)); // Toggle corresponding LED PE8 to PE15
+    }
 }
 
 // chase the led around the circle while decreasing the period
