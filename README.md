@@ -21,7 +21,85 @@ The C Lab assignment is comprised of 3 primary C programming exercises for the S
 - Exercise 1 and documentation
 
 ## Exercise Breakdowns
-### Exercise 1:
+## Exercise 1.1: Digital I/O 
+### Summary
+This task involved creating an independent module that can interface to the LEDS and button specifically for the STM32F3 discovery board.
+
+### Usage
+Digital_io.c and digital_io.h was created to se up an interface between the LEDs and button. The files include the functions to initialise and enable the clocks for GPIOA and LEDs, tongle between LED states , Chase Led which is a function to make the LEDs light up in a sequence when the button is pressed. And most importantly the button handler function to set up the interrupt when the button is pressed.
+
+### Valid input
+A valid input is the button pressed and release. Upon release the Led state shifts to the next state which lights up the next LED.
+
+### Functions and modularity
+The project has one module – Digital_Io
+
+#### Digital_Io Module 
+
+- EXTIO_IRQHandler: function to handle the button handler which is a pointer to the reset state
+- Digital_io_init: function toinitialiase and enable Cockes,GPIOA, LEDS, Button pin, set up interrupt priority 
+- set_LED : function to set the corresponding bit to turn on the LED
+- clear_LED : function to set the corresponding bit to turn off the LED
+- toggle_LED : function to set the corresponding bit to toggle
+- set_button_handler : function to set up the button handler
+-Chase LED : function to use some functions above to light LEDs one after the other in a sequence pattern
+
+### Testing
+By pressing button , see whether the LED lit up, next after pressing again , see if the current lit LED turned Off and Next LED turned on , Repeat till satisfied.
+## Exercise 1.2: 
+### Summary
+This task involved allowing the passing of a function pointer to the software module on initialisation (callback) when button is pressed. 
+
+### Usage
+Almost same setup to previous task , added a function pointer Buttoncallback to initialisation  . 
+
+### Valid input
+Same input as previous task . 
+
+### Functions and modularity
+#### Digital_io Module 
+Modified the initialisation function to accept the function pointer as an argument, stored function pointer internally in the module.
+Calls the function pointer when the button is pressed.
+
+### Testing
+Using debug mode check if the button pressed calls the chase LED function
+By pressing button , see whether the LED lit up, next after pressing again , see if the current lit LED turned Off and Next LED turned on , Repeat till satisfied.
+## Exercise 1.3: 
+### Summary
+This task involved incorporating the LED state into the module such that the only way to access it is through the header file using get/set functions.
+
+### Usage
+Two new functions were introduced into the digital_io.c file “set_led_state” “get_Led_state” . now can use these functions to control and query the state of leds respectively, ensuring the only way to access the LED states is through these functions
+
+### Valid input
+Same input as the previous tasks since it’s the same outcome 
+
+### Functions and modularity
+#### Digital_io Module 
+Two new functions were introduced into the digital_io.c file “set_led_state” “get_Led_state” . now can use these functions to control and query the state of leds respectively, ensuring the only way to access the LED states is through these functions
+
+### Testing
+
+Call the set/get functions,Using debug mode, check if the button pressed calls the function and check on the disassembly whether the state changed  
+Next like the previous tasks By pressing button , see whether the LED lit up, next after pressing again , see if the current lit LED turned Off and Next LED turned on , Repeat till satisfied.
+## Exercise 1.4: 
+### Summary
+This task involved an additional functionality to restrict the speed at which the LEDs change, we had to design in a way that it doesn’t affect how long it takes to return from the set LED function(not a polling delay)
+
+### Usage
+Neede to implement a TIM2 interrupt as a timer to generate interrupts at regular intervals, controlling the sped of the led changes without affecting the main loop
+
+### Valid input
+Set prescaler and reload values to necessary speed needed for LEDs to change
+
+### Functions and modularity
+#### Digital_io Module 
+-Implemented timer intialisarion function for TIM2 : this enables clock, sets prescaler and reload values, enables interrupts ands starts timer
+-Timer interrupt handler : clears the interrupt flag and calls the LED_chase function
+
+### Testing
+
+Test whether clocks work by adding prescaler values and reload values, check whether led switches accordingly. Press button and see whether led state switches without delay.
 
 ## Exercise 2.1 & 2.2: UART Receiving & Transmitting
 ### Summary
