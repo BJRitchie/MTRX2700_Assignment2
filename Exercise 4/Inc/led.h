@@ -14,8 +14,13 @@ void enable_clocks();
 // chase the led around a circle
 void chase_led();
 
+// Set the led to on
 void set_led(uint8_t led_num);
+
+// Clear the led
 void clear_led(uint8_t led_num);
+
+// Toggle the led on or off depending on current state
 void toggle_led(uint8_t led_num);
 
 // chases an led in a circle with increasing speed
