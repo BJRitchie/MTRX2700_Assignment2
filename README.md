@@ -23,26 +23,49 @@ The C Lab assignment is comprised of 3 primary C programming exercises for the S
 ## Exercise Breakdowns
 ### Exercise 1:
 
+## Exercise 2.1 & 2.2: UART Receiving & Transmitting
+### Summary
+This task involved creating a module that interfaces with the UART to read incoming characters into a memory buffer until a terminating character was received (2.1), and then transmitting the stored string back over the UART (2.2). 
 
-### Exercise 2:
-#### Part A - Basic Functionality:
-- Develops module that reads incoming characters into a memory buffer over UART
-#### Part B - Callback Function:
-- Establishes a callback function during the initialisation of the module
-- Re-transmits the string back over the UART
-##### Testing Plan:
-- Enter a string into the PuTTY terminal once the code is running
-- The string should be re-transmitted back to the terminal
-#### Part C - Interrupt-Based Receiving:
-- Adapts the serial receiving process to an interrupt-based approach
-- Interrupt used to handle data reception dynamically
-#### Part D - Advanced Functionality:
-- Re-transmits the string using interrupts
-- Double buffer system:
-  - Double buffer used to allow the serial interface to continue receiving new characters into one buffer while the previously received string is being procesed from another buffer
-  - Swaps between two buffers upon completing the reception of one string, alloiwing continuous data handling without losing data
-  - Buffer switching managing in the interrupt handler to ensure smooth flow of data and efficient processing
-##### Testing Plan:
+### Usage
+This task can be used for communication over UART using polling. It supports both receiving and transmitting with the UART.
+
+### Valid input
+Type a string into the terminal. 
+
+### Functions and modularity
+These tasks consist of one core module for the serial handling.
+
+#### Serial Module
+- finished_transmission: simulates a delay after transmission
+- receive_callback: Receives and then transmits string back over UART
+- run_serial_test: Calls the serial test using polling
+- SerialInitialise: Initialises the serial port and specified baud rate and callback functions
+
+### Testing
+Run the code. Type a string into the terminal. The string will be sent back to the terminal. 
+
+## Exercise 2.3 & 2.4: Interrupt Based Approach & Double Buffer 
+### Summary
+This task involved replacing the current serial interface communication with UART to an interrupt based approach for receiving (2.3) and transmitting over UART using a double buffer (2.4) to allow the serial to continue receiving characters while a different function can use the string. 
+
+### Usage
+An interrupt based approach including a double buffer enables for modularity in the code so other modules can function simultaneously. 
+
+### Valid input
+The same as for 2.1 & 2.2.
+
+### Functions and modularity
+These tasks consist of the same module for serial handling, changed for interrupt capabilites.
+
+#### Serial Module
+- received_new_string: Receives and then transmits string over UART, adds carriage return, new line and NULL terminator to the end of the string before transmitting
+- SerialInitalise: Additionally configures and enables USART interrupt
+- USART1_IRQHandler: Handles data reception and buffer swapping
+
+### Testing
+Run the code. Type a string into the terminal. The string will be sent back to the terminal. Implementation with other modules during exercise 4 demonstrates the interrupt working whilst other modules are functioning.
+
 
 
 ## Exercise 3.1: Continuous Timer 
@@ -116,4 +139,28 @@ This module is unchanged.
 One can adjust the delay parameters for TIM2 and TIM4, seen in the main file to show the operation of the module. Both are initialised at (essentially) the same time and run parallel. As such, if the first delay was 1000ms, and the second delay was 5000ms, the LEDs would turn on after 1 second, remain on for 4 seconds, then turn off and remain off.
 
 
-### Exercise 4:
+## Exercise 4: 
+### Summary
+This task combines all of the previous modules. It required each module to use interrupts to carry out their functions to allow each task to be carried out simultaneously, enabling modularity. 
+
+### Usage
+Any one of four modules (LED, serial, timer, or oneshot) can be called to carry out a specific function. 
+
+### Valid input
+Type one of four commands into the terminal (‘led’, ‘serial’, ‘timer’, or ‘oneshot’) followed by the appropriate parameter for the command.
+
+### Functions and modularity
+#### Timer Module 
+- enable_timer_interrupt: function that enables the global interrupts for timer 2 and 4
+
+#### LED Module
+- enable_clocks: enables the peripherals to use the LEDs
+- initialise_leds: configures the LEDs
+
+#### Serial Module
+- SerialInitialise: Initialises the serial port
+- 
+### Testing
+Run the code. Type one of the four commands into the terminal and then the desired parameter. The function of the command will be transmitted to the PuTTY terminal (as well as the board for the ‘led’ function). Type all commands into the terminal with their respective desired parameters. The interrupt based approach is proven to be working if all commands work simultaneously, proving modularity. 
+
+
