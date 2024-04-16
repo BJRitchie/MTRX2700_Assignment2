@@ -6,3 +6,4 @@ C:/Users/ranje/OneDrive/Desktop/mtrx2assignmnet2/mtrx2assignment2/git/MTRX2700-2
 ../Src/digital_io.c:46:6:clear_led	1
 ../Src/digital_io.c:50:6:toggle_led	1
 ../Src/digital_io.c:54:6:set_button_handler	1
+../Src/digital_io.c:58:6:chase_led	1

@@ -470,7 +470,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x0000000008000360       0x20 ./Src/digital_io.o
                 0x0000000008000360                set_button_handler
  .text.chase_led
-                0x0000000008000380       0x3c ./Src/main.o
+                0x0000000008000380       0x3c ./Src/digital_io.o
                 0x0000000008000380                chase_led
  .text.main     0x00000000080003bc       0x14 ./Src/main.o
                 0x00000000080003bc                main
@@ -671,7 +671,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x000000002000001c        0x4 ./Src/digital_io.o
                 0x000000002000001c                button_handler
  .bss.led_index.0
-                0x0000000020000020        0x1 ./Src/main.o
+                0x0000000020000020        0x1 ./Src/digital_io.o
  *(COMMON)
                 0x0000000020000024                . = ALIGN (0x4)
  *fill*         0x0000000020000021        0x3 
@@ -724,30 +724,30 @@ LOAD C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .comment       0x0000000000000043       0x44 ./Src/digital_io.o
  .comment       0x0000000000000043       0x44 ./Src/main.o
 
-.debug_info     0x0000000000000000      0xa9a
- .debug_info    0x0000000000000000      0x968 ./Src/digital_io.o
- .debug_info    0x0000000000000968      0x10f ./Src/main.o
- .debug_info    0x0000000000000a77       0x23 ./Startup/startup_stm32f303vctx.o
+.debug_info     0x0000000000000000      0xa71
+ .debug_info    0x0000000000000000      0x996 ./Src/digital_io.o
+ .debug_info    0x0000000000000996       0xb8 ./Src/main.o
+ .debug_info    0x0000000000000a4e       0x23 ./Startup/startup_stm32f303vctx.o
 
-.debug_abbrev   0x0000000000000000      0x29c
- .debug_abbrev  0x0000000000000000      0x1c6 ./Src/digital_io.o
- .debug_abbrev  0x00000000000001c6       0xc4 ./Src/main.o
- .debug_abbrev  0x000000000000028a       0x12 ./Startup/startup_stm32f303vctx.o
+.debug_abbrev   0x0000000000000000      0x297
+ .debug_abbrev  0x0000000000000000      0x1f8 ./Src/digital_io.o
+ .debug_abbrev  0x00000000000001f8       0x8d ./Src/main.o
+ .debug_abbrev  0x0000000000000285       0x12 ./Startup/startup_stm32f303vctx.o
 
 .debug_aranges  0x0000000000000000       0xa8
  .debug_aranges
-                0x0000000000000000       0x58 ./Src/digital_io.o
+                0x0000000000000000       0x60 ./Src/digital_io.o
  .debug_aranges
-                0x0000000000000058       0x28 ./Src/main.o
+                0x0000000000000060       0x20 ./Src/main.o
  .debug_aranges
                 0x0000000000000080       0x28 ./Startup/startup_stm32f303vctx.o
 
 .debug_rnglists
                 0x0000000000000000       0x70
  .debug_rnglists
-                0x0000000000000000       0x3e ./Src/digital_io.o
+                0x0000000000000000       0x44 ./Src/digital_io.o
  .debug_rnglists
-                0x000000000000003e       0x19 ./Src/main.o
+                0x0000000000000044       0x13 ./Src/main.o
  .debug_rnglists
                 0x0000000000000057       0x19 ./Startup/startup_stm32f303vctx.o
 
@@ -771,21 +771,21 @@ LOAD C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x0000000000014e0c       0xc9 ./Src/main.o
 
 .debug_line     0x0000000000000000      0xbde
- .debug_line    0x0000000000000000      0x634 ./Src/digital_io.o
- .debug_line    0x0000000000000634      0x52f ./Src/main.o
+ .debug_line    0x0000000000000000      0x659 ./Src/digital_io.o
+ .debug_line    0x0000000000000659      0x50a ./Src/main.o
  .debug_line    0x0000000000000b63       0x7b ./Startup/startup_stm32f303vctx.o
 
 .debug_str      0x0000000000000000    0x728f4
- .debug_str     0x0000000000000000    0x7289e ./Src/digital_io.o
-                                      0x72bd6 (size before relaxing)
- .debug_str     0x000000000007289e       0x27 ./Src/main.o
-                                      0x72266 (size before relaxing)
+ .debug_str     0x0000000000000000    0x728b2 ./Src/digital_io.o
+                                      0x72bea (size before relaxing)
+ .debug_str     0x00000000000728b2       0x13 ./Src/main.o
+                                      0x72238 (size before relaxing)
  .debug_str     0x00000000000728c5       0x2f ./Startup/startup_stm32f303vctx.o
                                          0x71 (size before relaxing)
 
 .debug_frame    0x0000000000000000      0x1ac
- .debug_frame   0x0000000000000000      0x138 ./Src/digital_io.o
- .debug_frame   0x0000000000000138       0x48 ./Src/main.o
+ .debug_frame   0x0000000000000000      0x154 ./Src/digital_io.o
+ .debug_frame   0x0000000000000154       0x2c ./Src/main.o
  .debug_frame   0x0000000000000180       0x2c C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
 
 .debug_line_str

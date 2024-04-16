@@ -51,6 +51,14 @@ void toggle_led(uint8_t led_num) {
     GPIOE->ODR ^= (1 << (led_num + 8)); // Toggle corresponding LED
 }
 
-void set_button_handler(void (*handler)()) {
+void set_button_handler(void (*handler)(void)) {
     button_handler = handler;
 }
+
+void chase_led() {
+    static uint8_t led_index = 0;
+    clear_led(led_index);       // Clear the currently lit LED
+    led_index = (led_index + 1) % 8;  // Move to the next LED
+    set_led(led_index);         // Set the next LED
+}
+

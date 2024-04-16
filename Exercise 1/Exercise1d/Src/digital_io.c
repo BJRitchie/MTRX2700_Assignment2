@@ -1,25 +1,20 @@
+#include <stddef.h>
 #include "digital_io.h"
 #include "stm32f303xc.h"
-#include <stddef.h>
 
-#define NUM_LEDS 8
-
-static ButtonPressCallback button_press_callback = NULL;
-static uint32_t led_speed_ms = 1000; // Default LED chase speed in milliseconds
-extern bool led_chase_enabled;
-
-void turn_off_led(uint8_t led_num) {
-    GPIOE->ODR &= ~(1 << (led_num + 8)); // Turn off corresponding LED
-}
+static ButtonCallback button_callback = NULL;
+static uint8_t led_state[8] = {0}; // Array to store LED states, initialized to all off
 
 void EXTI0_IRQHandler(void) {
-    if (button_press_callback != NULL) {
-        button_press_callback(); // Call the callback function
+    if (button_callback != NULL) {
+        button_callback();
     }
-    EXTI->PR |= EXTI_PR_PR0; // Reset interrupt
+    EXTI->PR |= EXTI_PR_PR0; // Clear interrupt pending bit
 }
 
-void digital_io_init(ButtonPressCallback callback) {
+void digital_io_init(ButtonCallback callback) {
+    button_callback = callback;
+
     // Enable clocks for GPIOA and GPIOE
     RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOEEN;
 
@@ -38,34 +33,89 @@ void digital_io_init(ButtonPressCallback callback) {
     // Configure EXTI0 line to trigger on rising edge
     EXTI->RTSR |= EXTI_RTSR_TR0;
 
-    //Un mask EXTI0 line
+    // Unmask EXTI0 line
     EXTI->IMR |= EXTI_IMR_MR0;
 
     // Set interrupt priority and enable EXTI0 interrupt
     NVIC_SetPriority(EXTI0_IRQn, 0);
     NVIC_EnableIRQ(EXTI0_IRQn);
+}
 
-    // Save the callback function pointer
-    button_press_callback = callback;
+void set_led(uint8_t led_num) {
+    GPIOE->BSRR = (1 << (led_num + 8)); // Set corresponding bit to turn on LED
+    led_state[led_num] = 1; // Update LED state
+}
+
+void clear_led(uint8_t led_num) {
+    GPIOE->BSRR = (1 << (led_num + 8 + 16)); // Set corresponding bit to turn off LED
+    led_state[led_num] = 0; // Update LED state
 }
 
 void toggle_led(uint8_t led_num) {
     GPIOE->ODR ^= (1 << (led_num + 8)); // Toggle corresponding LED
+    led_state[led_num] ^= 1; // Update LED state
 }
 
-void led_chase() {
-    static uint8_t current_led = 0;
-    if (led_chase_enabled) {
-        toggle_led(current_led); // Toggle LED
-        current_led = (current_led + 1) % NUM_LEDS; // Move to next LED
-        for (volatile uint32_t i = 0; i < led_speed_ms * 500; i++); // Delay
+void set_button_handler(ButtonCallback handler) {
+    button_callback = handler;
+}
+
+void set_led_state(uint8_t led_num, uint8_t state) {
+    if (state) {
+        set_led(led_num);
+    } else {
+        clear_led(led_num);
     }
 }
 
-void set_button_handler(ButtonPressCallback handler) {
-    button_press_callback = handler;
+uint8_t get_led_state(uint8_t led_num) {
+    return led_state[led_num];
 }
 
-void set_led_speed(uint32_t speed_ms) {
-    led_speed_ms = speed_ms;
+// Timer interrupt handler
+void TIM2_IRQHandler(void) {
+
+
+    if (TIM2->SR & TIM_SR_UIF) {
+        TIM2->SR &= ~TIM_SR_UIF; // Clear the update interrupt flag
+
+        // Call the chase_led function to update LED state
+        chase_led();
+    }
+}
+
+// Timer initialization function
+void timer_init(delay) {
+	__disable_irq();
+
+    // Enable TIM2 clock
+    RCC->APB1ENR |= RCC_APB1ENR_TIM2EN;
+
+    // Set prescaler value
+    TIM2->PSC = (8000000/(1000-1));
+
+    // Set reload value
+    TIM2->ARR = delay;
+
+    // Enable update interrupt
+    TIM2->DIER |= TIM_DIER_UIE;
+
+    // Set interrupt priority for TIM2
+    NVIC_SetPriority(TIM2_IRQn, 1);
+
+    // Enable TIM2 interrupt
+    NVIC_EnableIRQ(TIM2_IRQn);
+
+    // Start TIM2
+    TIM2->CR1 |= TIM_CR1_CEN;
+
+	// Re-enable all interrupts (now that we are finished)
+	__enable_irq();
+}
+
+void chase_led() {
+    static uint8_t led_index = 0;
+    clear_led(led_index);       // Clear the currently lit LED
+    led_index = (led_index + 1) % 8;  // Move to the next LED
+    set_led(led_index);         // Set the next LED
 }

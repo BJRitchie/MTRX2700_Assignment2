@@ -3,13 +3,14 @@
 
 #include <stdint.h>
 
-// Function pointer type for button press callback
-typedef void (*ButtonPressCallback)();
+typedef void (*ButtonCallback)(void);
 
-void digital_io_init(ButtonPressCallback callback);
-void set_button_handler(ButtonPressCallback handler);
+void digital_io_init(ButtonCallback callback);
 void set_led(uint8_t led_num);
 void clear_led(uint8_t led_num);
 void toggle_led(uint8_t led_num);
+void set_button_handler(ButtonCallback handler);
+void chase_led();
+
 
 #endif

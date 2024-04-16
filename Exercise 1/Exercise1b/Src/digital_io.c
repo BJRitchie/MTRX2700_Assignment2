@@ -1,16 +1,21 @@
+#include <stddef.h>
 #include "digital_io.h"
 #include "stm32f303xc.h"
 
-static ButtonPressCallback button_press_callback = 0x00;
+static ButtonCallback button_callback = NULL;
+static uint8_t led_index = 0;
 
 void EXTI0_IRQHandler(void) {
-    if (button_press_callback != 0x00) {
-        button_press_callback(); // Call the callback function
+    if (button_callback != NULL) {
+        button_callback();
     }
-    EXTI->PR |= EXTI_PR_PR0; // Reset interrupt
+    EXTI->PR |= EXTI_PR_PR0; // Clear interrupt pending bit
 }
 
-void digital_io_init(ButtonPressCallback callback) {
+void digital_io_init(ButtonCallback callback) {
+    button_callback = callback;
+    led_index = 0;
+
     // Enable clocks for GPIOA and GPIOE
     RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOEEN;
 
@@ -35,9 +40,6 @@ void digital_io_init(ButtonPressCallback callback) {
     // Set interrupt priority and enable EXTI0 interrupt
     NVIC_SetPriority(EXTI0_IRQn, 0);
     NVIC_EnableIRQ(EXTI0_IRQn);
-
-    // Save the callback function pointer
-    button_press_callback = callback;
 }
 
 void set_led(uint8_t led_num) {
@@ -52,6 +54,11 @@ void toggle_led(uint8_t led_num) {
     GPIOE->ODR ^= (1 << (led_num + 8)); // Toggle corresponding LED
 }
 
-void set_button_handler(ButtonPressCallback handler) {
-    button_press_callback = handler;
+void set_button_handler(ButtonCallback handler) {
+    button_callback = handler;
+}
+void chase_led() {
+    clear_led(led_index);       // Clear the currently lit LED
+    led_index = (led_index + 1) % 8;  // Move to the next LED
+    set_led(led_index);         // Set the next LED
 }
