@@ -4,6 +4,7 @@
 #include <string.h>
 #include <stdlib.h>
 
+// Include relevant header files
 #include <led.h>
 #include <serial.h>
 #include <timer.h>
@@ -16,12 +17,17 @@
 #endif
 
 int main(void) {
+// Enabling clocks for timers
 	enable_clocks();
+// Initialising the LED pins
 	initialise_leds();
+// Enabling the timer interrupt
 	enable_timer_interrupt();
 
+// Initialising the serial module
     SerialInitialise(BAUD_115200, &USART1_PORT, finished_transmission, received_new_string);
 
+// Loop indefinitely 
     for (;;) {
     }
 }
