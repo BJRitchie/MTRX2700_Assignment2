@@ -26,18 +26,21 @@ void chase_led(){
 	}
 }
 
+// Set the led to on
 void set_led(uint8_t led_num) {
     if (led_num < 8) { // Ensure the LED number is within 0-7 range
         GPIOE->BSRR = (1 << (led_num + 8)); // Set bit to turn on LED
     }
 }
 
+// Clear the led
 void clear_led(uint8_t led_num) {
     if (led_num < 8) { // Ensure the LED number is within 0-7 range
         GPIOE->BRR = (1 << (led_num + 8)); // Clear bit to turn off LED
     }
 }
 
+// Toggle the led on or off depending on current state
 void toggle_led(uint8_t led_num) {
     if (led_num < 8) { // Ensure the LED number is within 0-7 range
         GPIOE->ODR ^= (1 << (led_num + 8)); // Toggle corresponding LED PE8 to PE15
