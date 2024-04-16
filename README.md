@@ -159,7 +159,7 @@ Type one of four commands into the terminal (‘led’, ‘serial’, ‘timer�
 
 #### Serial Module
 - SerialInitialise: Initialises the serial port
-- 
+
 ### Testing
 Run the code. Type one of the four commands into the terminal and then the desired parameter. The function of the command will be transmitted to the PuTTY terminal (as well as the board for the ‘led’ function). Type all commands into the terminal with their respective desired parameters. The interrupt based approach is proven to be working if all commands work simultaneously, proving modularity. 
 
