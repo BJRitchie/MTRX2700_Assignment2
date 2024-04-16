@@ -44,14 +44,17 @@ SerialPort USART1_PORT = {
     .receive_callback = NULL
 };
 
+// Transmits the oneshot callback 
 void oneshot_callback(void) {
     SerialOutputString((uint8_t *)"One-shot timer expired.\r\n", &USART1_PORT);
 }
 
+// Transmits the timer callback
 void timer_callback(void) {
     SerialOutputString((uint8_t *)"Timer tick.\r\n", &USART1_PORT);
 }
 
+// Waste time once the transmission has finished
 void finished_transmission(uint32_t bytes_sent) {
 	for (volatile uint32_t i = 0; i < 0x8; i++) {
 	}
