@@ -1,5 +1,0 @@
-"./Core/Src/new_initialise.o"
-"./Core/Src/new_main.o"
-"./Core/Src/new_timer.o"
-"./Core/Src/part_d_serial.o"
-"./Core/Startup/startup_stm32f303vctx.o"
