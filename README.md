@@ -5,7 +5,7 @@ The C Lab assignment is comprised of 3 primary C programming exercises for the S
 ## Group Members
 - Sebastian O'Connell (520443826)
 - Ben Ritchie (520479733)
-- Ranjeev Perera (SID)
+- Ranjeev Perera (510585347)
 
 ## Roles & Responsibilities
 ### Sebastian O'Connell:
